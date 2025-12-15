@@ -1,0 +1,19 @@
+DIFERÈNCIES ENTRE GIT RESTORE I GIT REVERT
+
+git restore:
+- Desfà canvis locals no confirmats
+- No crea commits
+- S'utilitza abans de fer commit
+- Exemple:
+  git restore fitxer.php
+  git restore --staged fitxer.php
+
+git revert:
+- Desfà commits ja confirmats
+- Crea un nou commit
+- Manté l'historial complet
+- Exemple:
+  git revert a1b2c3d
+
+Diferència principal:
+restore treballa en local, revert treballa sobre l'historial.
