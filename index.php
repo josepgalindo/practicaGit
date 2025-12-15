@@ -2,12 +2,19 @@
 // Sistema de Gestió de Tasques
 // Versió 1.0
 
+function mostrarUsuari($nom) {
+    echo "Usuari actual: $nom\n";
+}
+
 function mostrarTasques($tasques) {
     echo "=== LLISTA DE TASQUES ===\n";
     foreach ($tasques as $id => $desc) {
         echo "[$id] $desc\n";
     }
 }
+
+
+$usuariActual = "Josep Galindo Castarlenas";
 
 $tasques = [
     1 => "Aprendre Git",
@@ -16,6 +23,7 @@ $tasques = [
 ];
 
 echo "=== GESTOR DE TASQUES ===\n";
+mostrarUsuari($usuariActual);
 echo "Benvingut al sistema!\n\n";
 
 mostrarTasques($tasques);
