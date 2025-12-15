@@ -1,3 +1,7 @@
+## Historial de Versions
+- v1.0: Versió inicial
+- v2.0: Sistema d'usuaris i tasques
+  
 # Pràctica Git - Desplegament d'Aplicacions Web
 
 ## Autor
