@@ -8,9 +8,8 @@ function mostrarUsuari($nom) {
 
 function mostrarTasques($tasques) {
     echo "=== LLISTA DE TASQUES ===\n";
-    // ERROR INTENCIONAT: bucle for incorrecte
-    for ($i = 0; $i < count($tasques); $i++) {
-        echo "[$i] ERROR\n";
+    foreach ($tasques as $id => $desc) {
+        echo "[$id] $desc\n";
     }
 }
 
